@@ -8,11 +8,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.navArgument
 import br.com.fiap.ecotrack.screens.CustomChallenges
 import br.com.fiap.ecotrack.screens.LoginScreen
 import br.com.fiap.ecotrack.screens.MenuScreen
@@ -28,70 +26,54 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             EcoTrackTheme {
-                Surface(
+                Surface (
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
-                ) {
+                ){
                     val navController = rememberNavController()
-                    NavHost(navController = navController, startDestination = "LoginScreen") {
-                        composable("LoginScreen") {
+                    NavHost(navController = navController, startDestination = "LoginScreen"){
+                        composable("LoginScreen"){
                             LoginScreen(navController)
                         }
-                        composable("MenuScreen") {
+                        composable("MenuScreen"){
                             MenuScreen(navController)
                         }
 
-                        composable("RankingRewards") {
+                        composable("RankingRewards"){
                             RankingRewards(navController)
                         }
 
-                        composable("CustomChallenges") {
+                        composable("CustomChallenges"){
                             CustomChallenges(navController)
                         }
 
-                        composable("MonitoringConsumption") {
+                        composable("MonitoringConsumption"){
                             MonitoringConsumption(navController)
                         }
 
-                        composable(
-                            "ReportsStatistics?order={order}",
-                            arguments = listOf(navArgument(name = "order") {
-                                defaultValue = "order not defined"
-                            })
-                        )
-                        {
-                            ReportsStatistics(navController, it.arguments?.getString("order")!!)
+                        composable("ReportsStatistics"){
+                            ReportsStatistics(navController)
                         }
-                        composable(
-                            "PerfilScreen/{nome}/{idade}",
-                            arguments = listOf(
-                                navArgument(name = "nome") {
-                                    type = NavType.StringType
-                                },
-                                navArgument(name = "idade") {
-                                    type = NavType.IntType
-                                }
 
-                                )
-                        ) {
+                        composable("PerfilScreen/{nome}"){
                             val nome = it.arguments?.getString("nome")
-
-                            val idade = it.arguments?.getInt("idade")
-
-                            PerfilScreen(navController, nome!!, idade!!)
+                            PerfilScreen(navController, nome!!)
                         }
 
-                        composable("CustomChallenges") {
+                        composable("CustomChallenges"){
                             CustomChallenges(navController)
                         }
 
-                        composable("Rewards") {
+                        composable("Rewards"){
                             RankingRewards(navController)
                         }
 
+                        composable("Report"){
+                            ReportsStatistics(navController)
+
+                        }
 
                     }
-
                 }
             }
         }
