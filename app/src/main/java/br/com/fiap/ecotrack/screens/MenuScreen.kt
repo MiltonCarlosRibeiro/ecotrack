@@ -19,9 +19,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 @Composable
-fun MenuScreen() {
+fun MenuScreen(navController: NavController) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -43,7 +44,7 @@ fun MenuScreen() {
 
 
             Button(
-                onClick = {/*TODO*/ },
+                onClick = {navController.navigate("PerfilScreen")},
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
@@ -53,7 +54,7 @@ fun MenuScreen() {
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = {/*TODO*/ },
+                onClick = {navController.navigate("MonitoringConsumption")},
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
@@ -63,7 +64,7 @@ fun MenuScreen() {
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = {/*TODO*/ },
+                onClick = {navController.navigate("CustomChallenges")},
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
@@ -73,7 +74,7 @@ fun MenuScreen() {
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = {/*TODO*/ },
+                onClick = {navController.navigate("RankingRewards")},
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
@@ -83,7 +84,7 @@ fun MenuScreen() {
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = {/*TODO*/ },
+                onClick = {navController.navigate("ReportsStatistics")},
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
@@ -93,7 +94,7 @@ fun MenuScreen() {
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = {/*TODO*/ },
+                onClick = {navController.navigate("LoginScreen")},
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
@@ -110,10 +111,10 @@ fun MenuScreen() {
 
 }
 
-@Preview
-@Composable
-fun LoginScreenPreview(){
-    MenuScreen()
-}
+//@Preview
+//@Composable
+//fun LoginScreenPreview(){
+//    MenuScreen()
+//}
 
 

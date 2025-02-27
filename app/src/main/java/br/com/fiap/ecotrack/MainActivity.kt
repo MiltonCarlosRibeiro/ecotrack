@@ -8,7 +8,16 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import br.com.fiap.ecotrack.screens.CustomChallenges
+import br.com.fiap.ecotrack.screens.LoginScreen
 import br.com.fiap.ecotrack.screens.MenuScreen
+import br.com.fiap.ecotrack.screens.MonitoringConsumption
+import br.com.fiap.ecotrack.screens.PerfilScreen
+import br.com.fiap.ecotrack.screens.RankingRewards
+import br.com.fiap.ecotrack.screens.ReportsStatistics
 import br.com.fiap.ecotrack.ui.theme.EcoTrackTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,8 +30,49 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ){
-                    MenuScreen()
+                    val navController = rememberNavController()
+                    NavHost(navController = navController, startDestination = "LoginScreen"){
+                        composable("LoginScreen"){
+                            LoginScreen(navController)
+                        }
+                        composable("MenuScreen"){
+                            MenuScreen(navController)
+                        }
 
+                        composable("RankingRewards"){
+                            RankingRewards()
+                        }
+
+                        composable("CustomChallenges"){
+                            CustomChallenges()
+                        }
+
+                        composable("MonitoringConsumption"){
+                            MonitoringConsumption()
+                        }
+
+                        composable("ReportsStatistics"){
+                            ReportsStatistics()
+                        }
+
+                        composable("PerfilScreen"){
+                            PerfilScreen()
+                        }
+
+                        composable("CustomChallenges"){
+                            CustomChallenges()
+                        }
+
+                        composable("Rewards"){
+                            RankingRewards()
+                        }
+
+                        composable("Report"){
+                            ReportsStatistics()
+
+                        }
+
+                    }
                 }
             }
         }
