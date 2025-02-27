@@ -44,7 +44,7 @@ fun MenuScreen(navController: NavController) {
 
 
             Button(
-                onClick = {navController.navigate("PerfilScreen/Olá Milton")},
+                onClick = {navController.navigate("PerfilScreen/Olá Milton/40")},
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
@@ -84,7 +84,7 @@ fun MenuScreen(navController: NavController) {
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = {navController.navigate("ReportsStatistics")},
+                onClick = {navController.navigate("ReportsStatistics?order=general")},
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 

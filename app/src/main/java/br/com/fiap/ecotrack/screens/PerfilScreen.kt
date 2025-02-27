@@ -18,7 +18,8 @@ import androidx.navigation.NavController
 @Composable
 fun PerfilScreen(
     navController: NavController,
-    nome: String
+    nome: String,
+    idade: Int
 
 ) {
     Box(
@@ -28,7 +29,7 @@ fun PerfilScreen(
             .padding(32.dp)
     ) {
         Text(
-            text = "Perfil - $nome",
+            text = "Perfil - $nome - $idade",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White
