@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun ReportsStatistics(navController: NavController) {
+fun ReportsStatistics(navController: NavController, order: String) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -24,7 +24,7 @@ fun ReportsStatistics(navController: NavController) {
             .padding(32.dp)
     ) {
         Text(
-            text = "Report",
+            text = "Report - $order",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = Color.Black
