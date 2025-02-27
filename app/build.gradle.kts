@@ -56,4 +56,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //BLIBLIOTECA IMPORTADA PARA NAVEGAÇÃO
+    implementation(libs.androidx.navigation.compose)
 }
