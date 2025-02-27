@@ -48,7 +48,7 @@ fun MenuScreen() {
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
             ) {
-                Text(text = "Editar Perfil", fontSize = 20.sp, color = Color.Blue)
+                Text(text = "Perfil", fontSize = 20.sp, color = Color.Blue)
             }
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -58,7 +58,7 @@ fun MenuScreen() {
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
             ) {
-                Text(text = "Monitoramento", fontSize = 20.sp, color = Color.Blue)
+                Text(text = "Monitoring", fontSize = 20.sp, color = Color.Blue)
             }
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -68,7 +68,7 @@ fun MenuScreen() {
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
             ) {
-                Text(text = "Desafios", fontSize = 20.sp, color = Color.Blue)
+                Text(text = "Challenges", fontSize = 20.sp, color = Color.Blue)
             }
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -78,7 +78,7 @@ fun MenuScreen() {
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
             ) {
-                Text(text = "Relatórios", fontSize = 20.sp, color = Color.Blue)
+                Text(text = "Rewards", fontSize = 20.sp, color = Color.Blue)
             }
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -88,7 +88,7 @@ fun MenuScreen() {
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
 
             ) {
-                Text(text = "Recompensas", fontSize = 20.sp, color = Color.Blue)
+                Text(text = "Report", fontSize = 20.sp, color = Color.Blue)
             }
             Spacer(modifier = Modifier.height(16.dp))
 

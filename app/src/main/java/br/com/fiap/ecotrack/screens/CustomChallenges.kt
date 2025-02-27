@@ -11,20 +11,19 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun MonitoramentoConsumo() {
+fun CustomChallenges() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFE30E436))
+            .background(Color(0xFE5BBFB6))
             .padding(32.dp)
     ) {
         Text(
-            text = "Monitoramento",
+            text = "Challenges",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White
@@ -34,13 +33,13 @@ fun MonitoramentoConsumo() {
             colors = ButtonDefaults.buttonColors(Color.White),
             modifier = Modifier.align(Alignment.Center)
         ) {
-            Text(text = "Voltar", fontSize = 20.sp, color = Color.Blue)
+            Text(text = "Back", fontSize = 20.sp, color = Color.Blue)
         }
     }
 }
 //@Preview
 //@Composable
 //fun LoginScreenPreview(){
-//    MonitoramentoConsumo()
+//    CustomChallenges()
 //}
 

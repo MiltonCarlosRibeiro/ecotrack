@@ -11,12 +11,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun Rankingrecompensas() {
+fun RankingRewards() {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -34,13 +33,13 @@ fun Rankingrecompensas() {
             colors = ButtonDefaults.buttonColors(Color.White),
             modifier = Modifier.align(Alignment.Center)
         ) {
-            Text(text = "Voltar", fontSize = 20.sp, color = Color.Blue)
+            Text(text = "Back", fontSize = 20.sp, color = Color.Blue)
         }
     }
 }
 //@Preview
 //@Composable
 //fun LoginScreenPreview(){
-//    Rankingrecompensas()
+//    RankingRewards()
 //}
 

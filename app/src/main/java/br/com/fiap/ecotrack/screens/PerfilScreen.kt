@@ -34,7 +34,7 @@ fun PerfilScreen() {
             colors = ButtonDefaults.buttonColors(Color.White),
             modifier = Modifier.align(Alignment.Center)
         ) {
-            Text(text = "Voltar", fontSize = 20.sp, color = Color.Blue)
+            Text(text = "Back", fontSize = 20.sp, color = Color.Blue)
         }
     }
 }
