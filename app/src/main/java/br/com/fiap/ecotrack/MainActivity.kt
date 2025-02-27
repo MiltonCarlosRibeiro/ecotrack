@@ -40,35 +40,36 @@ class MainActivity : ComponentActivity() {
                         }
 
                         composable("RankingRewards"){
-                            RankingRewards()
+                            RankingRewards(navController)
                         }
 
                         composable("CustomChallenges"){
-                            CustomChallenges()
+                            CustomChallenges(navController)
                         }
 
                         composable("MonitoringConsumption"){
-                            MonitoringConsumption()
+                            MonitoringConsumption(navController)
                         }
 
                         composable("ReportsStatistics"){
-                            ReportsStatistics()
+                            ReportsStatistics(navController)
                         }
 
-                        composable("PerfilScreen"){
-                            PerfilScreen()
+                        composable("PerfilScreen/{nome}"){
+                            val nome = it.arguments?.getString("nome")
+                            PerfilScreen(navController, nome!!)
                         }
 
                         composable("CustomChallenges"){
-                            CustomChallenges()
+                            CustomChallenges(navController)
                         }
 
                         composable("Rewards"){
-                            RankingRewards()
+                            RankingRewards(navController)
                         }
 
                         composable("Report"){
-                            ReportsStatistics()
+                            ReportsStatistics(navController)
 
                         }
 

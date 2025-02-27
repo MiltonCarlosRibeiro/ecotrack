@@ -13,9 +13,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 @Composable
-fun RankingRewards() {
+fun RankingRewards(navController: NavController) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -29,7 +30,7 @@ fun RankingRewards() {
             color = Color.Black
         )
         Button(
-            onClick = { /*TODO*/},
+            onClick = {navController.navigate("MenuScreen")},
             colors = ButtonDefaults.buttonColors(Color.White),
             modifier = Modifier.align(Alignment.Center)
         ) {
