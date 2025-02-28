@@ -15,9 +15,9 @@ import br.com.fiap.ecotrack.screens.CustomChallenges
 import br.com.fiap.ecotrack.screens.LoginScreen
 import br.com.fiap.ecotrack.screens.MenuScreen
 import br.com.fiap.ecotrack.screens.MonitoringConsumption
-import br.com.fiap.ecotrack.screens.PerfilScreen
 import br.com.fiap.ecotrack.screens.RankingRewards
 import br.com.fiap.ecotrack.screens.ReportsStatistics
+import br.com.fiap.ecotrack.screens.UserScreen
 import br.com.fiap.ecotrack.ui.theme.EcoTrackTheme
 
 class MainActivity : ComponentActivity() {
@@ -55,7 +55,8 @@ class MainActivity : ComponentActivity() {
                             ReportsStatistics(navController)
                         }
 
-                        composable("PerfilScreen"){
+                        composable("UserScreen"){
+                            UserScreen(navController)
                         }
 
                         composable("CustomChallenges"){

@@ -1,4 +1,5 @@
 package br.com.fiap.ecotrack.screens
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,7 +17,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun ReportsStatistics(navController: NavController) {
+fun UserScreen(navController: NavController){
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -38,10 +39,3 @@ fun ReportsStatistics(navController: NavController) {
         }
     }
 }
-//@Preview
-//@Composable
-//fun LoginScreenPreview(){
-//    ReportsStatistics()
-//}
-
-

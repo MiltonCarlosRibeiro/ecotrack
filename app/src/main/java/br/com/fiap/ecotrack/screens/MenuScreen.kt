@@ -42,16 +42,17 @@ fun MenuScreen(navController: NavController) {
                 .align(Alignment.Center)
         ) {
 
-
             Button(
-                onClick = {navController.navigate("PerfilScreen/Olá Milton")},
+                onClick = {navController.navigate("UserScreen")},
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 160.dp, height = 60.dp)
 
             ) {
-                Text(text = "Perfil", fontSize = 20.sp, color = Color.Blue)
+                Text(text = "User", fontSize = 20.sp, color = Color.Blue)
             }
             Spacer(modifier = Modifier.height(16.dp))
+
+
 
             Button(
                 onClick = {navController.navigate("MonitoringConsumption")},
