@@ -55,9 +55,7 @@ class MainActivity : ComponentActivity() {
                             ReportsStatistics(navController)
                         }
 
-                        composable("PerfilScreen/{nome}"){
-                            val nome = it.arguments?.getString("nome")
-                            PerfilScreen(navController, nome!!)
+                        composable("PerfilScreen"){
                         }
 
                         composable("CustomChallenges"){

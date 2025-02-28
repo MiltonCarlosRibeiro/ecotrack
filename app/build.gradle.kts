@@ -59,4 +59,7 @@ dependencies {
 
     //BLIBLIOTECA IMPORTADA PARA NAVEGAÇÃO
     implementation(libs.androidx.navigation.compose)
+    // Dependências do Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }

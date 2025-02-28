@@ -46,7 +46,7 @@ fun MenuScreen(navController: NavController) {
             Button(
                 onClick = {navController.navigate("PerfilScreen/Olá Milton")},
                 colors = ButtonDefaults.buttonColors(Color.White),
-                modifier = Modifier.size(width = 200.dp, height = 48.dp)
+                modifier = Modifier.size(width = 160.dp, height = 60.dp)
 
             ) {
                 Text(text = "Perfil", fontSize = 20.sp, color = Color.Blue)
@@ -56,7 +56,7 @@ fun MenuScreen(navController: NavController) {
             Button(
                 onClick = {navController.navigate("MonitoringConsumption")},
                 colors = ButtonDefaults.buttonColors(Color.White),
-                modifier = Modifier.size(width = 200.dp, height = 48.dp)
+                modifier = Modifier.size(width = 160.dp, height = 60.dp)
 
             ) {
                 Text(text = "Monitoring", fontSize = 20.sp, color = Color.Blue)
@@ -66,7 +66,7 @@ fun MenuScreen(navController: NavController) {
             Button(
                 onClick = {navController.navigate("CustomChallenges")},
                 colors = ButtonDefaults.buttonColors(Color.White),
-                modifier = Modifier.size(width = 200.dp, height = 48.dp)
+                modifier = Modifier.size(width = 160.dp, height = 60.dp)
 
             ) {
                 Text(text = "Challenges", fontSize = 20.sp, color = Color.Blue)
@@ -76,7 +76,7 @@ fun MenuScreen(navController: NavController) {
             Button(
                 onClick = {navController.navigate("RankingRewards")},
                 colors = ButtonDefaults.buttonColors(Color.White),
-                modifier = Modifier.size(width = 200.dp, height = 48.dp)
+                modifier = Modifier.size(width = 160.dp, height = 60.dp)
 
             ) {
                 Text(text = "Rewards", fontSize = 20.sp, color = Color.Blue)
@@ -86,7 +86,7 @@ fun MenuScreen(navController: NavController) {
             Button(
                 onClick = {navController.navigate("ReportsStatistics?order=general")},
                 colors = ButtonDefaults.buttonColors(Color.White),
-                modifier = Modifier.size(width = 200.dp, height = 48.dp)
+                modifier = Modifier.size(width = 160.dp, height = 60.dp)
 
             ) {
                 Text(text = "Report", fontSize = 20.sp, color = Color.Blue)
@@ -96,7 +96,7 @@ fun MenuScreen(navController: NavController) {
             Button(
                 onClick = {navController.navigate("LoginScreen")},
                 colors = ButtonDefaults.buttonColors(Color.White),
-                modifier = Modifier.size(width = 200.dp, height = 48.dp)
+                modifier = Modifier.size(width = 160.dp, height = 60.dp)
 
             ) {
                 Text(text = "EXIT", fontSize = 20.sp, color = Color.Blue)
