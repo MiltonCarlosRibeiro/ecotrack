@@ -2,6 +2,7 @@ package br.com.fiap.ecotrack.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
@@ -22,14 +23,16 @@ fun UserScreen(navController: NavController){
         modifier = Modifier
             .fillMaxSize()
             .background(Color(0xFEF0F2F2))
-            .padding(32.dp)
+            .padding(50.dp)
     ) {
         Text(
-            text = "Report",
+            text = "Cadastro",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = Color.Black
         )
+
+
         Button(
             onClick = {navController.navigate("MenuScreen")},
             colors = ButtonDefaults.buttonColors(Color.White),
